@@ -7,13 +7,19 @@ function Home() {
         padding: 40px;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         gap: 30px;
+    `;
+
+    const Header = styled.h2`
+        color: #330c0c;
+        padding: 12px 24px;
+        box-shadow: 3px 4px 4px -1px #d0d0d0;
     `;
 
     return (
         <Wrap>
-            <h2>Search Movie</h2>
+            <Header>Search Movie</Header>
             <SearchBer />
         </Wrap>
     );

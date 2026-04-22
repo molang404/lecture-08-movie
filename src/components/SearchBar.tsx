@@ -15,28 +15,34 @@ const Box = styled.form`
 const Input = styled.input`
     flex: 1;
     padding: 10px;
-    background-color: ivory;
+    background-color: #fffff9;
     outline: none;
     border-radius: 5px;
     border: 1px solid #4f3131;
+    transition: all 0.4s;
+
+    &:hover {
+        background-color: #f3f3eb;
+        border: 1px solid #3b2525;
+    }
 `;
 
 const Button = styled.button`
     padding: 13px 16px;
     border-radius: 5px;
-    background-color: #7a4b4b;
-    color: white;
-    border: 1px solid #4f3131;
-    font-weight: bold;
+    background-color: #fffff9;
+    color: #7a4b4b;
+    border: 1px solid #7a4b4b;
+    font-size: 17px;
     cursor: pointer;
-    
+    transition: all 0.4s;
+
     &:hover {
-        background-color: ivory;
-        border: 1px solid #7a4b4b;
-        color: #7a4b4b;
+        background-color: #7a4b4b;
+        border: 1px solid #4f3131;
+        color: #fffff9;
     }
 `;
-
 
 function SearchBer() {
     const navigate = useNavigate();
@@ -59,7 +65,7 @@ function SearchBer() {
         <Box onSubmit={onSubmit}>
             <Input onChange={onChange} />
             <Button type={"submit"}>
-                검색
+                <i className="fa-solid fa-magnifying-glass"></i>
             </Button>
         </Box>
     );
