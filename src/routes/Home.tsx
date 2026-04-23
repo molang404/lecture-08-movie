@@ -13,6 +13,7 @@ function Home() {
 
     const Header = styled.h2`
         color: #330c0c;
+        background-color: #fff;
         padding: 12px 24px;
         box-shadow: 3px 4px 4px -1px #d0d0d0;
     `;

@@ -6,6 +6,11 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;  /* inherit : 부모 요소의 색깔을 따르겠음 */
+    }
 `;
 
 export default GlobalStyle;
